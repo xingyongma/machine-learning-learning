@@ -20,6 +20,7 @@ def make_meshgrid(x, y, h=.02):
     """
     x_min, x_max = x.min() - 1, x.max() + 1
     y_min, y_max = y.min() - 1, y.max() + 1
+    # **meshgrid**
     xx, yy = np.meshgrid(np.arange(x_min, x_max, h),
                          np.arange(y_min, y_max, h))
     return xx, yy
